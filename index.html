@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Poppins&family=Sofia+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Survey</title>
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p><br> 
+    <form id="survey-form">
+      <fieldset class="person-details">
+        <label for="name" id="name-label">Name <br> <input id='name' type="text" placeholder="Enter your name" required/></label>
+        <label for="email" id="email-label">Email <br> <input id='email' type="email" placeholder="Enter your email" required/> </label>
+        <label for="number" id="number-label">Age(optional) <br> <input id='number' type="number"  placeholder="Age" min="10" max="100"/> </label>
+      </fieldset>
+
+      <fieldset class="person-details">
+        <p>Which option best describes you?</p>
+        <select id="dropdown" required>
+          <option disabled selected value>Select your current role</option>
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="person-details">
+        <p class="questions">Would you recommend freeCodeCamp to a friend?</p>
+        <label><input name="reclevel" value="sure" type="radio"> Definitely</label>
+        <label><input name="reclevel" value="maybe" type="radio"> Maybe</label>
+        <label><input name="reclevel" value="not-sure" type="radio"> Not sure</label>
+      </fieldset>
+
+      <fieldset class="person-details">
+        <p class="questions">What would you like to see improved?</p>
+        <label><input value="videos" type="checkbox"> Videos</label>
+        <label><input value="community" type="checkbox"> Community</label>
+        <label><input value="front-end" type="checkbox"> Front-End</label>
+        <label><input value="back-end" type="checkbox"> Back-End</label>
+      </fieldset>
+
+      <p class="questions">Any comments or suggestions?</p>
+      <textarea placeholder="Enter your comment here..."></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
