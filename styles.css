@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(87, 156, 217);
+    color: white;
+    background-image: linear-gradient(
+        100deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(47, 44, 44);
+    opacity: 0.8;
+    border-radius: 2%;
+    padding: 25px;
+}
+
+.person-details {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    text-align: left;
+}
+
+#name-label, #email-label, #number-label, .questions {
+    text-align: left;
+    margin: 2%;
+}
+
+#name, #email, #number {
+    margin-top: 3%;
+}
+
+#title #description {
+    font-size: 2rem;
+}
+
+input[type=text], input[type=number], input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+  }
+  
+#submit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #205722;
+}
+
+p {
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+textarea {
+    margin: 20px 0px;
+    background-color: black;
+    color: white;
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+@media (min-width: 576px) {
+    body {
+        width: 576px;
+        margin: auto;
+        font-size: 26px;
+    }
+}
